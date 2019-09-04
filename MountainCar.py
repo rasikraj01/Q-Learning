@@ -54,8 +54,8 @@ for episode in range(EPISODES):
         new_discrete_state = get_discrete_state(new_state)
         episode_reward += reward  
         
-        # if episode % SHOW_EVERY == 0:
-        #     env.render()
+        if episode % SHOW_EVERY == 0:
+            env.render()
 
         if not done:
 
